@@ -1,26 +1,47 @@
-## [`sindresorhus/github-markdown-css`][1] has dark theme now!
+# GitHub Markdown theme
 
-# github-markdown-css
+📄 The one-stop shop GitHub-style theme for rendered Markdown documents
 
-> [`sindresorhus/github-markdown-css`][1], with all variants.
+<div align="center">
+
+![]()
+
+</div>
+
+## Installation
+
+```sh
+npm install @jcbhmr/github-markdown-theme
+```
+
+⚠️ This is a _CSS package_. That means there's no JavaScript exported. You are
+expected to use this either:
+
+1. With a JavaScript bundler that understands `import "./style.css"` or similar.
+2. In your HTML using `<link rel="stylesheet">` with a bundler.
+3. Directly on your page using a CDN or your own copy of the `.min.css` file.
+
+If you just want to apply a fancy Markdown style to a page returned by a SSR
+function like a PHP script or a Deno deploy response, use code like this:
+
+```html
+<link rel="stylesheet" href="https://esm.run/@jcbhmr/github-markdown-theme@1" />
+```
 
 ## Usage
 
-| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> |
-| - | - | - | - | - | - | - | - | - | - |
-| Dark\Light | **light** | **dark** | **dark_dimmed** | **dark_high_contrast** | **dark_colorblind** | **light_colorblind** | **light_high_contrast** | **light_tritanopia** | **dark_tritanopia** |
-| **light** | [light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light.css) | [dark-light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark-light.css) | [dark_dimmed-light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed-light.css) | [dark_high_contrast-light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast-light.css) | [dark_colorblind-light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind-light.css) | [light_colorblind-light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind-light.css) | [light_high_contrast-light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast-light.css) | [light_tritanopia-light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia-light.css) | [dark_tritanopia-light.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia-light.css) |
-| **dark** | [light-dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light-dark.css) | [dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark.css) | [dark_dimmed-dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed-dark.css) | [dark_high_contrast-dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast-dark.css) | [dark_colorblind-dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind-dark.css) | [light_colorblind-dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind-dark.css) | [light_high_contrast-dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast-dark.css) | [light_tritanopia-dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia-dark.css) | [dark_tritanopia-dark.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia-dark.css) |
-| **dark_dimmed** | [light-dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light-dark_dimmed.css) | [dark-dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark-dark_dimmed.css) | [dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed.css) | [dark_high_contrast-dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast-dark_dimmed.css) | [dark_colorblind-dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind-dark_dimmed.css) | [light_colorblind-dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind-dark_dimmed.css) | [light_high_contrast-dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast-dark_dimmed.css) | [light_tritanopia-dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia-dark_dimmed.css) | [dark_tritanopia-dark_dimmed.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia-dark_dimmed.css) |
-| **dark_high_contrast** | [light-dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light-dark_high_contrast.css) | [dark-dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark-dark_high_contrast.css) | [dark_dimmed-dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed-dark_high_contrast.css) | [dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast.css) | [dark_colorblind-dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind-dark_high_contrast.css) | [light_colorblind-dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind-dark_high_contrast.css) | [light_high_contrast-dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast-dark_high_contrast.css) | [light_tritanopia-dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia-dark_high_contrast.css) | [dark_tritanopia-dark_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia-dark_high_contrast.css) |
-| **dark_colorblind** | [light-dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light-dark_colorblind.css) | [dark-dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark-dark_colorblind.css) | [dark_dimmed-dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed-dark_colorblind.css) | [dark_high_contrast-dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast-dark_colorblind.css) | [dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind.css) | [light_colorblind-dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind-dark_colorblind.css) | [light_high_contrast-dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast-dark_colorblind.css) | [light_tritanopia-dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia-dark_colorblind.css) | [dark_tritanopia-dark_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia-dark_colorblind.css) |
-| **light_colorblind** | [light-light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light-light_colorblind.css) | [dark-light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark-light_colorblind.css) | [dark_dimmed-light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed-light_colorblind.css) | [dark_high_contrast-light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast-light_colorblind.css) | [dark_colorblind-light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind-light_colorblind.css) | [light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind.css) | [light_high_contrast-light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast-light_colorblind.css) | [light_tritanopia-light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia-light_colorblind.css) | [dark_tritanopia-light_colorblind.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia-light_colorblind.css) |
-| **light_high_contrast** | [light-light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light-light_high_contrast.css) | [dark-light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark-light_high_contrast.css) | [dark_dimmed-light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed-light_high_contrast.css) | [dark_high_contrast-light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast-light_high_contrast.css) | [dark_colorblind-light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind-light_high_contrast.css) | [light_colorblind-light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind-light_high_contrast.css) | [light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast.css) | [light_tritanopia-light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia-light_high_contrast.css) | [dark_tritanopia-light_high_contrast.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia-light_high_contrast.css) |
-| **light_tritanopia** | [light-light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light-light_tritanopia.css) | [dark-light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark-light_tritanopia.css) | [dark_dimmed-light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed-light_tritanopia.css) | [dark_high_contrast-light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast-light_tritanopia.css) | [dark_colorblind-light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind-light_tritanopia.css) | [light_colorblind-light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind-light_tritanopia.css) | [light_high_contrast-light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast-light_tritanopia.css) | [light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia.css) | [dark_tritanopia-light_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia-light_tritanopia.css) |
-| **dark_tritanopia** | [light-dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light-dark_tritanopia.css) | [dark-dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark-dark_tritanopia.css) | [dark_dimmed-dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_dimmed-dark_tritanopia.css) | [dark_high_contrast-dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_high_contrast-dark_tritanopia.css) | [dark_colorblind-dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_colorblind-dark_tritanopia.css) | [light_colorblind-dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_colorblind-dark_tritanopia.css) | [light_high_contrast-dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_high_contrast-dark_tritanopia.css) | [light_tritanopia-dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/light_tritanopia-dark_tritanopia.css) | [dark_tritanopia.css](https://cdn.jsdelivr.net/gh/hyrious/github-markdown-css@main/dist/dark_tritanopia.css) |
+If you're using a bundler like [Vite], you can use `import` statements in your
+JavaScript code to auto-bundle the CSS when you run your build step. Be aware
+that this library applies things to the `:root` global scope!
 
-## License
+```js
+import "@jcbhmr/github-markdown-theme";
 
-MIT @ [hyrious](https://github.com/hyrious)
+document.body.innerHTML = `
+  <h1>Hello world!</h1>
+  <p>Put your awesome page content here!</p>
+`
+```
 
-[1]: https://github.com/sindresorhus/github-markdown-css
+Now you can just use plain HTML elements and they will be styled just like a
+regular GitHub `README.md` document would appear on a GitHub repository.
